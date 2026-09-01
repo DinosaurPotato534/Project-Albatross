@@ -20,3 +20,13 @@ The solar panels just sit on the wing and will be wired to an MPPT board. They e
 ### Hull
 Used a series of ribs inside to support a really thin outer shell of 3D print. These will slide down into their corresponding spots, making the structure much stronger. The front one also serves as the motor mount too.
 ![ribs](assets/PlaneRibs.png)
+
+## Assembly 
+
+### The Plane
+Most of the planes assembly consists of techniques similar to other rc planes. The wings are made from foam board "wrapped" around a dowel spar. They are made by cutting 3 slits across a sheet of foam board spaced out at 7in, 8iin, and 17 from one end. Then the paper layer of the foam board is peeled off for the top of the airfoil to create a better curve. The foam board is folded over the wing spar and three sections of these are connected.
+The body is made from a dowel as the main structure of the hull, with 3d printed shells for aerodynamics and part containers. The slide onto the dowel and will be hot glued into place. Then the electronics are wired and placed into the nose cone of the 3d printed hull. The pontoons can then be mounted on they're hinges, which will be connected to n20 motor to swing up and down.
+Solar panels will be mounted on the wing using a plastic wrap to hold them in place, while still allowing sunlight through.
+
+### The PCB
+Both the pcbs, especially the mppt board, are rather complex and have a lot of smd soldering. The use of a hot plate will be need and following the design the components will be soldered on. These boards will then be wired and hooked up to the rest of the planes electronics.

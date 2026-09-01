@@ -1,0 +1,3 @@
+(version 1)
+(rule "edge_clearance_edge_mounted_connectors"
+	(constraint edge_clearance (min 0.25mm)))

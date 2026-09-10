@@ -4,6 +4,8 @@
 
 The goal for the project was to create an autonomous plane capable of flying for hours off of solar power. Another big aspect is the ability to takeoff from water using a pontoon system mounted to a 4-bar linkage. The plane is going to be made from foam board and 3d prints. The wingspan is 90in and the length is roughly 6ft. 
 
+https://cad.onshape.com/documents/cb4d8119196719dc9005cd1f/w/a50220c0795171ae93763f3d/e/ee41d6fe8c21d3f854f1676d?renderMode=0&uiState=6aa1fe8d3db98abb8ad60905
+
 ## Motivation
 We wanted to explore the idea of multi-hour flight using solar power. Most rc planes have a relatively short flight time, but we wanted to try and expand on that. That is why we also added the pontoons, so it could recharge on the surface of water.
 

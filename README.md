@@ -1,4 +1,3 @@
-
 # Project Albatross
 
 ![plane](assets/Plane1.png)
@@ -14,17 +13,29 @@ We wanted to explore the idea of multi-hour flight using solar power. Most rc pl
 The pontoon mechanism works by having two hollow 3D printed hulls swing out when landing. The reason we decided to put them on a swinging mechanism was that it would greatly reduce drag, and in turn air resistance. Just based on frontal area that's around a 25% increase in efficiency. They will be driven by a motor that will winch it up or down.
 ![side](assets/PlaneSide.png)
 ![side2](assets/PlaneSidePontoon.png)
+
 ### Solar Panels
 The solar panels just sit on the wing and will be wired to an MPPT board. They each generate around 3.5W in full sun, and there will be 17. It should be enough to sustain flight, but it will almost never get perfect lighting, so we will see. These sit on a 90in wing that has an 7in chord (not including the ailerons). Panels measure 125mm, so roughly 5in.
 ![wings](assets/PlaneTop.png)
+
 ### Hull
 Used a series of ribs inside to support a really thin outer shell of 3D print. These will slide down into their corresponding spots, making the structure much stronger. The front one also serves as the motor mount too.
 ![ribs](assets/PlaneRibs.png)
+
+## PCB
+### Flight Controller
+The flight controller was built with Ardupilot in mind, with multiple connectors allowing for different sensors to be modular and  swapped out. It is designed to take a 3 or 4S battery, and runs on an STM32F405RGT6. We are planning on using a GPS and a magnetometer but we have extra connector for different sensors if we want to add them going forward. We also have an IMU and pressure sensor on the board.
+![Flight Controller](assets/fc.png)
+
+### MPPT Board
+We made a full solar circuit, with a MPPT board and BMI. With this plane design we kept the wings relatively small. Only 17 solar panels could fit. With each solar panel proving roughly 0.6V the total voltage was roughly 10V. This is well below the standard voltage of a 4s battery, thus we needed a step up MPPT board. The market for this is miniscule and expensive leading our design to be useful as it functioned as both a step up and step down board depending on the solar array. However, our board also ended up being far to expensive to become justifiable. We decided to pivot to using a standard step down MPPT and increasing the solar area, as well as deceasing the battery voltage to a 3S.
+![MPPT Board](assets/mppt.png)
 
 ## Assembly 
 
 ### The Plane
 Most of the planes assembly consists of techniques similar to other rc planes. The wings are made from foam board "wrapped" around a dowel spar. They are made by cutting 3 slits across a sheet of foam board spaced out at 7in, 8iin, and 17 from one end. Then the paper layer of the foam board is peeled off for the top of the airfoil to create a better curve. The foam board is folded over the wing spar and three sections of these are connected.
+
 The body is made from a dowel as the main structure of the hull, with 3d printed shells for aerodynamics and part containers. The slide onto the dowel and will be hot glued into place. Then the electronics are wired and placed into the nose cone of the 3d printed hull. The pontoons can then be mounted on they're hinges, which will be connected to n20 motor to swing up and down.
 Solar panels will be mounted on the wing using a plastic wrap to hold them in place, while still allowing sunlight through.
 
